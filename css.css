@@ -66,11 +66,7 @@ main div p{
 
 
 @media only screen and (max-width:480px) {
-    .imgtopcircle {
-    text-align: center;
-    margin-top: 50px;
-        margin-left: 50px;
-}
+
     .imgtopcircle + p {
         margin: auto;
         margin-top: 20px;
@@ -103,22 +99,4 @@ main div p{
         font-size: 8px
 
 }
-}
-@media only screen and(max-width:1160px){
-        main {
-        display: none;
-
-    }
-        main div {
-        float: left;
-        margin-top: 0;
-        margin-left: 10px;
-        width: 100px;
-        height: 100px;
-
-    }
-        main div img {
-margin-left: -100px;
-        width: 100px;
-    }
 }
