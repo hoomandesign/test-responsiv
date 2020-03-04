@@ -1,0 +1,317 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive1</title>
+
+
+    <link rel="stylesheet" type="text/css" href="responsive1.css">
+
+</head>
+<style>
+    * {
+        margin: 0;
+        border: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    html,
+    body {
+        background: url("images/bg.jpg") top center no-repeat;
+        background-size: cover;
+        font-family: "Source Sans Pro", Helvetica, sans-serif;
+        color: rgba(255, 255, 255, 0.65);
+    }
+    
+    a {
+        text-decoration-style: dotted;
+        color: rgba(255, 255, 255, 0.65);
+    }
+    /* width of col */
+    
+    .row {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    
+    .col-8 {
+        width: 66.66%;
+        margin: 0 auto;
+        display: table-cell;
+        vertical-align: middle;
+    }
+    
+    .col-12 {
+        width: 100%;
+    }
+    
+    .col-4 {
+        width: 33.33%;
+        margin: 0 auto;
+    }
+    
+    .col-3 {
+        width: 25%;
+        margin: 0 auto;
+    }
+    
+    .col-2 {
+        width: 16.66%;
+    }
+    
+    .col-5 {
+        width: 41.66%;
+        margin: 0 auto;
+    }
+    
+    .col-6 {
+        width: 50%;
+    }
+    
+    .col-7 {
+        width: 58.33%;
+    }
+    /* style */
+    
+    .col-8 .header {
+        width: 100%;
+        margin: 9% auto;
+    }
+    
+    .col-8 .header .col-3 img {
+        border-radius: 100%;
+        display: block;
+        border: 1px solid rgba(255, 255, 255, 0.025);
+        background-color: rgba(255, 255, 255, 0.075);
+        margin: 5% auto;
+    }
+    
+    .col-8 .header .col-5 .text {
+        margin: 0 auto;
+        width: 100%;
+        color: rgba(255, 255, 255, 0.65);
+    }
+    
+    .col-8 .header .text h1 {
+        font-size: 1.35em;
+        text-align: center;
+        line-height: 1.65;
+        font-weight: 250;
+        font-family: "Source Sans Pro", Helvetica, sans-serif;
+        color: rgba(255, 255, 255, 0.65);
+    }
+    
+    .col-8 .header .text a {
+        text-decoration-style: dotted;
+        color: rgba(255, 255, 255, 0.65);
+    }
+    
+    .col-8 .header .col-4 .social {
+        margin: 5% auto;
+        width: 100%;
+    }
+    
+    .col-8 .header .col-4 .social ul li {
+        list-style-type: none;
+        color: rgba(255, 255, 255, 0.65);
+        margin: 3%;
+        display: inline-block;
+    }
+    
+    .col-8 .header .col-4 .social ul li:first-of-type {
+        margin-left: 15%;
+    }
+    
+    .col-8 .header .col-4 .social ul li .fa {
+        margin: 0 auto;
+        border-radius: 100%;
+        color: #fff;
+        border-radius: 100%;
+        border: 1px solid rgba(255, 255, 255, 0.65);
+        background-color: rgba(255, 255, 255, 0.075);
+    }
+    
+    .col-8 .header .col-4 .social ul li .fa:hover {
+        transition: all 2s ease;
+        cursor: pointer;
+        background-color: rgba(255, 255, 255, 0.75);
+    }
+    /* container */
+    
+    .col-8 .container {
+        width: 70%;
+        margin: 0 auto;
+    }
+    
+    .col-8 .container .row {
+        width: 100%;
+        content: " ";
+        display: table;
+        clear: both;
+    }
+    
+    .col-8 .container .row .col-4 {
+        float: left;
+    }
+    
+    .col-8 .container .row .col-4 .pic {
+        margin: 7%;
+        border: 1px solid rgba(255, 255, 255, 0.75);
+        background-color: rgba(255, 255, 255, 0.075);
+    }
+    
+    .col-8 .container .row .col-4 .pic:hover {
+        transition: all 1.3s ease;
+        cursor: pointer;
+        background-color: rgba(255, 255, 255, 0.75);
+    }
+    
+    .col-8 .container .row .col-4 .pic img {
+        width: 100%;
+    }
+    
+    .col-8 .container .row .col-4 .pic .caption {
+        margin: 5%;
+    }
+    
+    .col-8 .container .row .col-4 .pic .caption p {
+        text-align: center;
+    }
+    /* footer */
+    
+    .col-8 .footer {
+        text-align: center;
+        margin: 10% auto;
+    }
+    
+    .col-8 .footer::before {
+        border-top: 1px solid rgba(255, 255, 255, 0.25);
+        display: block;
+        width: 10em;
+        margin: 0 auto 3em auto;
+        content: '';
+    }
+    /* media query */
+    
+    @media only screen and (max-width: 768px) {
+        /* For mobile phones: */
+        [class*="col-"] {
+            width: 100%;
+        }
+    }
+</style>
+
+<body>
+
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+        <div class="row">
+            <div class="col-8">
+                <div class="header">
+                    <div class="col-3">
+                        <img src="images/avatar.jpg" alt=" ">
+                    </div>
+                    <div class="col-5">
+                        <div class="text">
+                            <h1>
+                                This is Visualize, a responsive site template designed by <a href="#">TEMPLATED</a> and released for free under the Creative Commons License.</h1>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="social">
+                            <ul>
+                                <li>
+                                    <span class="fa-stack fa-lg">
+                                    <i class="fa fa-twitter fa-stack-1x"></i>
+                                  </span>
+                                </li>
+                                <li><span class="fa-stack fa-lg">
+                                <i class="fa fa-facebook fa-stack-1x"></i>
+                              </span></li>
+                                <li><span class="fa-stack fa-lg">
+                                <i class="fa fa-instagram fa-stack-1x"></i>
+                              </span></li>
+                                <li><span class="fa-stack fa-lg">
+                                    <i class="fa fa-500px fa-stack-1x"></i>
+                                  </span></li>
+                                <li><span class="fa-stack fa-lg">
+                                <i class="fa fa-envelope fa-stack-1x"></i>
+                              </span></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="pic">
+                                <img src="images/thumbs/01.jpg" alt="">
+                                <div class="caption">
+                                    <p>Lorem ipsum dolor sit amet</p>
+                                </div>
+                            </div>
+                            <div class="pic">
+                                <img src="images/thumbs/02.jpg" alt="">
+                                <div class="caption">
+                                    <p>Lorem ipsum dolor sit amet</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="pic">
+                                <img src="images/thumbs/03.jpg" alt="">
+                                <div class="caption">
+                                    <p>Lorem ipsum dolor sit amet</p>
+                                </div>
+                            </div>
+                            <div class="pic">
+                                <img src="images/thumbs/04.jpg" alt="">
+                                <div class="caption">
+                                    <p>Lorem ipsum dolor sit amet</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="pic">
+                                <img src="images/thumbs/06.jpg" alt="">
+                                <div class="caption">
+                                    <p>Lorem ipsum dolor sit amet</p>
+                                </div>
+                            </div>
+                            <div class="pic">
+                                <img src="images/thumbs/07.jpg" alt="">
+                                <div class="caption">
+                                    <p>Lorem ipsum dolor sit amet</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="footer">
+                    <p>© Untitled. All rights reserved. Design: <a href="#">TEMPLATED.</a> Demo Images: <a href="#">Unsplash.</a></p>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    </html>
+
+</body>
+
+</html>
